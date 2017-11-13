@@ -1,4 +1,4 @@
-FROM redwyvern/nodejs-devenv-base
+FROM docker.artifactory.weedon.org.au/redwyvern/nodejs-devenv-base
 MAINTAINER Nick Weedon <nick@weedon.org.au>
 
 ARG GIT_USER=Jenkins
