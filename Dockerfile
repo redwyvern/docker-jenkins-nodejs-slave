@@ -34,7 +34,7 @@ RUN \
 ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
 
 # Standard SSH port
-EXPOSE 22 8080
+EXPOSE 22
 
 # Default command
 CMD ["/usr/sbin/sshd", "-D"]
