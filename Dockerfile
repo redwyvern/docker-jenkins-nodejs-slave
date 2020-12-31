@@ -22,7 +22,7 @@ COPY ./usr /usr
 # Install Oracle Java 8 (Java is required for Jenkins slave)
 RUN \
     add-apt-repository ppa:openjdk-r/ppa -y && \
-    apt-get clean && apt-get update && apt-get install -y --no-install-recommend openjdk-11-jdk && \
+    apt-get clean && apt-get update && apt-get install -y --no-install-recommends openjdk-11-jdk && \
     apt-get -q autoremove && \
     apt-get -q clean -y && rm -rf /var/lib/apt/lists/* && rm -f /var/cache/apt/*.bin
 
