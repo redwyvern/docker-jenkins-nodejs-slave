@@ -19,7 +19,7 @@ USER root
 
 COPY ./usr /usr
 
-# Install Oracle Java 8 (Java is required for Jenkins slave)
+# Install OpenJDK 11 (Java is required for Jenkins slave)
 RUN \
     add-apt-repository ppa:openjdk-r/ppa -y && \
     apt-get clean && apt-get update && apt-get install -y --no-install-recommends openjdk-11-jdk && \
